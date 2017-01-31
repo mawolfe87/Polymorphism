@@ -39,20 +39,22 @@ public class Main {
         }
     }
 
-    public static String getPetDetails(){
-        return null;
+    public static String getPetDetails() {
+        return "I can't access the pets array it's a local variable of main and you don't pass it to me";
     }
 
     public static int getNumberOfPets(){
-        return -1;
+        return kb.nextInt();
     }
 
     public static String getKindOfPet(){
-        return null;
+        kb.next();
+        return kb.nextLine();
     }
 
     public static String getNameOfPet(){
-        return null;
+
+        return kb.nextLine();
     }
 
 
