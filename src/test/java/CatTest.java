@@ -1,3 +1,5 @@
+import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -5,13 +7,18 @@ import org.junit.Test;
  */
 public class CatTest {
 
+    Cat cat;
+
+    @Before
+    public void setUp(){
+        cat = new Cat();
+    }
+
     @Test
     public void speakTest(){
-
+        String expected = "Chirp!";
+        String actual = cat.speak();
+        Assert.assertEquals(expected,actual);
     }
 
-    @Test
-    public void setAndGetNameTest(){
-
-    }
 }

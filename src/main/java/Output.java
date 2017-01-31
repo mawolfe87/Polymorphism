@@ -3,7 +3,15 @@
  */
 public class Output {
 
-    public void promptForNumberOfMotherFuckingPets(){
-        System.out.println("How many mother fuckin' pets do you have?");
+    public String promptForNumberOfPets(){
+        return null;
+    }
+
+    public String promptForNameOfPet(){
+        return null;
+    }
+
+    public String promptForTheKindOfPet(){
+        return null;
     }
 }

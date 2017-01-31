@@ -3,7 +3,7 @@
  */
 public abstract class Pet {
     private String name;
-    abstract void speak();
+    abstract String speak();
 
     public void setName(String name){
         this.name = name;

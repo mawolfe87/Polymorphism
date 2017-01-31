@@ -1,3 +1,5 @@
+import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -5,13 +7,17 @@ import org.junit.Test;
  */
 public class DogTest {
 
-    @Test
-    public void speakTest(){
+    Dog dog;
 
+    @Before
+    public void setUp(){
+        dog = new Dog();
     }
 
     @Test
-    public void setAndGetNameTest(){
-
+    public void speakTest(){
+        String expected = "Meow";
+        String actual = dog.speak();
+        Assert.assertEquals(expected,actual);
     }
 }
